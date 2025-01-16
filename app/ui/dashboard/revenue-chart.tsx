@@ -8,6 +8,14 @@ import { lusitana } from '@/app/ui/fonts';
 // https://www.chartjs.org/
 // https://airbnb.io/visx/
 
+type Revenue = {
+  id: string;
+  amount: number;
+  date: string; // or any appropriate date format
+  description: string;
+};
+
+
 export default async function RevenueChart({
   revenue,
 }: {
